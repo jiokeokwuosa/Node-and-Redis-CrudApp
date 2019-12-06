@@ -1,0 +1,46 @@
+{
+  "name": "redisandnode",
+  "version": "1.0.0",
+  "description": "Mean Stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node ./dist/app.js",
+    "dev": "nodemon --exec babel-node ./server.js",
+    "build": "babel ./API/src -d ./API/dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiokeokwuosa/Mean"
+  },
+  "keywords": [
+    "REDIS",
+    "EXPRESS",
+    "NODE"
+  ],
+  "author": "chijioke okwuosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiokeokwuosa/PropertyPro-lite/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "redis": "^2.8.0"
+  },
+  "homepage": "https://github.com/jiokeokwuosa/PropertyPro-lite#readme"
+}
