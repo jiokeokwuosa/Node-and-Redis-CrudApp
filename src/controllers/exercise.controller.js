@@ -1,26 +1,7 @@
 import Db from '../db';
 
 class ExerciseController {
-    /* eslint camelcase: 0 */
-    static async getAllExercises(req, res) {     
-      try {
-        await Exercise.find((err, Exercises) => {
-          if (err) console.log(err);               
-          
-          return res.status(200).json({
-              status: 'success',
-              data: Exercises
-          });
-            
-        });
-      } catch (err) {
-        return res.status(500).json({
-          status: '500 Internal server error',
-          error: 'Error getting exercises'
-        });
-      }
-    } 
-
+    
     static async getSingleExercise(req, res) {     
         try {
           const { id } = req.params;
@@ -62,7 +43,7 @@ class ExerciseController {
     } 
 
     static async createExercise(req, res) {         
-        try {           
+        try {  
             const duration =Number(req.body.duration);  
             const date =Date.parse(req.body.date); 
             const {id, username, description} =req.body;  
