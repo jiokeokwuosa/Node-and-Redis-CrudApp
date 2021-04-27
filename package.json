@@ -41,7 +41,7 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.1",
-    "redis": "^2.8.0"
+    "redis": "^3.1.1"
   },
   "homepage": "https://github.com/jiokeokwuosa/Node-and-Redis-CrudApp#readme"
 }
